@@ -1,0 +1,53 @@
+#parameters:
+#    mindbody_api_client.source_name:
+#    mindbody_api_client.source_password:
+#    mindbody_api_client.username:
+#    mindbody_api_client.user_password:
+#    mindbody_api_client.site_ids:
+
+services:
+    guzzle_client:
+        class: GuzzleHttp\Client
+
+    MiguelAlcaino\MindbodyApiClient\MindbodySOAP\SOAPBody\Factory\UserCredentialsFactory:
+        arguments:
+            - ''
+            - ''
+            - ''
+
+    MiguelAlcaino\MindbodyApiClient\MindbodySOAP\SOAPBody\Factory\SourceCredentialsFactory:
+        arguments:
+            - ''
+            - ''
+            - ''
+
+    MiguelAlcaino\MindbodyApiClient\MindbodySOAP\BaseRequester\MindbodySOAPRequester:
+        arguments:
+            - '@guzzle_client'
+
+    MiguelAlcaino\MindbodyApiClient\MindbodySOAP\Serializer\Factory\JmsSerializerFactory: ~
+
+    JMS\Serializer\Serializer:
+        factory: ['@MiguelAlcaino\MindbodyApiClient\MindbodySOAP\Serializer\Factory\JmsSerializerFactory', 'create']
+
+    MiguelAlcaino\MindbodyApiClient\MindbodySOAP\Serializer\Deserializer\MindbodyDeserializer:
+        arguments:
+            - '@JMS\Serializer\Serializer'
+
+    MiguelAlcaino\MindbodyApiClient\MindbodySOAP\SOAPBody\Request\SourceCredentials:
+        factory: ['@MiguelAlcaino\MindbodyApiClient\MindbodySOAP\SOAPBody\Factory\SourceCredentialsFactory', 'create']
+
+    MiguelAlcaino\MindbodyApiClient\MindbodySOAP\SOAPBody\Request\UserCredentials:
+        factory: ['@MiguelAlcaino\MindbodyApiClient\MindbodySOAP\SOAPBody\Factory\UserCredentialsFactory', 'create']
+
+    MiguelAlcaino\MindbodyApiClient\MindbodySOAP\Serializer\Serializer\MindbodySerializer:
+        arguments:
+            - '@JMS\Serializer\Serializer'
+            - '@MiguelAlcaino\MindbodyApiClient\MindbodySOAP\Serializer\Deserializer\MindbodyDeserializer'
+            - '@MiguelAlcaino\MindbodyApiClient\MindbodySOAP\SOAPBody\Request\SourceCredentials'
+            - '@MiguelAlcaino\MindbodyApiClient\MindbodySOAP\SOAPBody\Request\UserCredentials'
+
+    MiguelAlcaino\MindbodyApiClient\MindbodySOAP\SOAPService\ClientService\ClientServiceSOAPRequester:
+        arguments:
+            - '@MiguelAlcaino\MindbodyApiClient\MindbodySOAP\BaseRequester\MindbodySOAPRequester'
+            - '@MiguelAlcaino\MindbodyApiClient\MindbodySOAP\Serializer\Serializer\MindbodySerializer'
