@@ -9,10 +9,9 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $root        = $treeBuilder->root('miguel_alcaino_mindbody_api_client');
+        $treeBuilder = new TreeBuilder('miguel_alcaino_mindbody_api_client');
 
-        $root
+        $treeBuilder->getRootNode()
             ->children()
                 ->arrayNode('credentials')
                     ->children()
