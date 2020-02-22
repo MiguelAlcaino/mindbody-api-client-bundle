@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c624d30a8981ab9eab8f481b4767896",
+    "content-hash": "dd09662a5c46920bcbac35c08efb2335",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1223,16 +1223,16 @@
         },
         {
             "name": "jms/serializer",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/serializer.git",
-                "reference": "e2d3c49d9322a08ee32221a5623c898160dada79"
+                "reference": "0e286681396d8139406e596c6c802d37ab0b2124"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/serializer/zipball/e2d3c49d9322a08ee32221a5623c898160dada79",
-                "reference": "e2d3c49d9322a08ee32221a5623c898160dada79",
+                "url": "https://api.github.com/repos/schmittjoh/serializer/zipball/0e286681396d8139406e596c6c802d37ab0b2124",
+                "reference": "0e286681396d8139406e596c6c802d37ab0b2124",
                 "shasum": ""
             },
             "require": {
@@ -1254,7 +1254,7 @@
                 "ext-pdo_sqlite": "*",
                 "jackalope/jackalope-doctrine-dbal": "^1.1.5",
                 "ocramius/proxy-manager": "^1.0|^2.0",
-                "phpunit/phpunit": "^7.5||^8.0",
+                "phpunit/phpunit": "^7.5||^8.0||^9.0",
                 "psr/container": "^1.0",
                 "symfony/dependency-injection": "^3.0|^4.0|^5.0",
                 "symfony/expression-language": "^3.0|^4.0|^5.0",
@@ -1273,7 +1273,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "3.5-dev"
                 }
             },
             "autoload": {
@@ -1304,20 +1304,20 @@
                 "serialization",
                 "xml"
             ],
-            "time": "2019-12-14T20:49:23+00:00"
+            "time": "2020-02-22T21:06:01+00:00"
         },
         {
             "name": "miguelalcaino/mindbody-api-client",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MiguelAlcaino/mindbody-api-client.git",
-                "reference": "8180bc73dc0715b4633115e3a64d9420a55e9bfd"
+                "reference": "7e0d5b4e86d0546b6398a3f406b3425a612f49d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MiguelAlcaino/mindbody-api-client/zipball/8180bc73dc0715b4633115e3a64d9420a55e9bfd",
-                "reference": "8180bc73dc0715b4633115e3a64d9420a55e9bfd",
+                "url": "https://api.github.com/repos/MiguelAlcaino/mindbody-api-client/zipball/7e0d5b4e86d0546b6398a3f406b3425a612f49d8",
+                "reference": "7e0d5b4e86d0546b6398a3f406b3425a612f49d8",
                 "shasum": ""
             },
             "require": {
@@ -1349,7 +1349,7 @@
                 }
             ],
             "description": "Php client for Mindbody",
-            "time": "2020-02-09T21:02:00+00:00"
+            "time": "2020-02-22T23:28:00+00:00"
         },
         {
             "name": "psr/container",
@@ -1585,16 +1585,16 @@
         },
         {
             "name": "spatie/enum",
-            "version": "2.3.4",
+            "version": "2.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/enum.git",
-                "reference": "5d0e6112b1b5ff3586c58fbca19e3baccd028d57"
+                "reference": "6111809e57f14c773d2a73556f5c7878433bbec2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/enum/zipball/5d0e6112b1b5ff3586c58fbca19e3baccd028d57",
-                "reference": "5d0e6112b1b5ff3586c58fbca19e3baccd028d57",
+                "url": "https://api.github.com/repos/spatie/enum/zipball/6111809e57f14c773d2a73556f5c7878433bbec2",
+                "reference": "6111809e57f14c773d2a73556f5c7878433bbec2",
                 "shasum": ""
             },
             "require": {
@@ -1602,8 +1602,6 @@
                 "php": "^7.2"
             },
             "require-dev": {
-                "nunomaduro/phpinsights": "^1.9",
-                "phpmd/phpmd": "^2.7",
                 "phpunit/phpunit": "^8.0"
             },
             "type": "library",
@@ -1637,7 +1635,7 @@
                 "enumerable",
                 "spatie"
             ],
-            "time": "2020-01-17T13:06:17+00:00"
+            "time": "2020-02-11T10:20:59+00:00"
         },
         {
             "name": "symfony/config",
