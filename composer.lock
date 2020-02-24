@@ -1308,16 +1308,16 @@
         },
         {
             "name": "miguelalcaino/mindbody-api-client",
-            "version": "1.0.10",
+            "version": "1.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MiguelAlcaino/mindbody-api-client.git",
-                "reference": "ead7f02391144fabd9c7d6be370faf9993221a67"
+                "reference": "7b2e1c38071b457859a176b98ceadedf4c9f2d2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MiguelAlcaino/mindbody-api-client/zipball/ead7f02391144fabd9c7d6be370faf9993221a67",
-                "reference": "ead7f02391144fabd9c7d6be370faf9993221a67",
+                "url": "https://api.github.com/repos/MiguelAlcaino/mindbody-api-client/zipball/7b2e1c38071b457859a176b98ceadedf4c9f2d2b",
+                "reference": "7b2e1c38071b457859a176b98ceadedf4c9f2d2b",
                 "shasum": ""
             },
             "require": {
@@ -1349,7 +1349,7 @@
                 }
             ],
             "description": "Php client for Mindbody",
-            "time": "2020-02-23T00:05:29+00:00"
+            "time": "2020-02-24T23:23:28+00:00"
         },
         {
             "name": "psr/container",
