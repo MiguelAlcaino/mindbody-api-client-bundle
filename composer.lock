@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dd09662a5c46920bcbac35c08efb2335",
+    "content-hash": "57302c96acad4cc8156d4d0bb6162470",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1308,16 +1308,16 @@
         },
         {
             "name": "miguelalcaino/mindbody-api-client",
-            "version": "1.0.11",
+            "version": "1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MiguelAlcaino/mindbody-api-client.git",
-                "reference": "7b2e1c38071b457859a176b98ceadedf4c9f2d2b"
+                "reference": "0a0f14c8fc446ae49a6d815b07c541e7c231f118"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MiguelAlcaino/mindbody-api-client/zipball/7b2e1c38071b457859a176b98ceadedf4c9f2d2b",
-                "reference": "7b2e1c38071b457859a176b98ceadedf4c9f2d2b",
+                "url": "https://api.github.com/repos/MiguelAlcaino/mindbody-api-client/zipball/0a0f14c8fc446ae49a6d815b07c541e7c231f118",
+                "reference": "0a0f14c8fc446ae49a6d815b07c541e7c231f118",
                 "shasum": ""
             },
             "require": {
@@ -1349,7 +1349,7 @@
                 }
             ],
             "description": "Php client for Mindbody",
-            "time": "2020-02-24T23:23:28+00:00"
+            "time": "2020-03-15T22:26:55+00:00"
         },
         {
             "name": "psr/container",
@@ -1585,16 +1585,16 @@
         },
         {
             "name": "spatie/enum",
-            "version": "2.3.5",
+            "version": "2.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/enum.git",
-                "reference": "6111809e57f14c773d2a73556f5c7878433bbec2"
+                "reference": "b5509f8cb66cbde2725ba89d59ee56a6e145dc3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/enum/zipball/6111809e57f14c773d2a73556f5c7878433bbec2",
-                "reference": "6111809e57f14c773d2a73556f5c7878433bbec2",
+                "url": "https://api.github.com/repos/spatie/enum/zipball/b5509f8cb66cbde2725ba89d59ee56a6e145dc3f",
+                "reference": "b5509f8cb66cbde2725ba89d59ee56a6e145dc3f",
                 "shasum": ""
             },
             "require": {
@@ -1635,7 +1635,7 @@
                 "enumerable",
                 "spatie"
             ],
-            "time": "2020-02-11T10:20:59+00:00"
+            "time": "2020-03-11T10:18:34+00:00"
         },
         {
             "name": "symfony/config",
