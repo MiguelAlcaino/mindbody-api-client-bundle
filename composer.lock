@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56a5b3d3b2200a85992d7ae98e1c4585",
+    "content-hash": "e24de7157c96853bd3c3b4d0cb91c75a",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1314,16 +1314,16 @@
         },
         {
             "name": "miguelalcaino/mindbody-api-client",
-            "version": "1.0.17",
+            "version": "1.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MiguelAlcaino/mindbody-api-client.git",
-                "reference": "933d231ea03eb6eeb7e0dc4967612327fffd4e07"
+                "reference": "2692b5e8ef5cc3df1a8b4db12a1116ade6fd98a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MiguelAlcaino/mindbody-api-client/zipball/933d231ea03eb6eeb7e0dc4967612327fffd4e07",
-                "reference": "933d231ea03eb6eeb7e0dc4967612327fffd4e07",
+                "url": "https://api.github.com/repos/MiguelAlcaino/mindbody-api-client/zipball/2692b5e8ef5cc3df1a8b4db12a1116ade6fd98a9",
+                "reference": "2692b5e8ef5cc3df1a8b4db12a1116ade6fd98a9",
                 "shasum": ""
             },
             "require": {
@@ -1355,7 +1355,7 @@
                 }
             ],
             "description": "Php client for Mindbody",
-            "time": "2020-03-23T23:28:42+00:00"
+            "time": "2020-03-31T19:55:41+00:00"
         },
         {
             "name": "psr/container",
