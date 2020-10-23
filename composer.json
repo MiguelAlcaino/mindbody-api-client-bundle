@@ -12,10 +12,12 @@
         "php": "^7.4",
         "symfony/dependency-injection": "^5.1",
         "symfony/config": "^5.1",
-        "miguelalcaino/mindbody-api-client": "^1.0",
-        "symfony/yaml": "^5.1"
+        "miguelalcaino/mindbody-api-client": "^1.0.26",
+        "symfony/http-kernel": "^5.1"
     },
     "require-dev": {
+        "matthiasnoback/symfony-dependency-injection-test": "^4.2",
+        "phpunit/phpunit": "^9"
     },
     "autoload": {
         "psr-4": {
