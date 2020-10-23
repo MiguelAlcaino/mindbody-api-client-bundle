@@ -9,18 +9,6 @@ services:
     guzzle_client:
         class: GuzzleHttp\Client
 
-    MiguelAlcaino\MindbodyApiClient\MindbodySOAP\SOAPBody\Factory\UserCredentialsFactory:
-        arguments:
-            - ''
-            - ''
-            - ''
-
-    MiguelAlcaino\MindbodyApiClient\MindbodySOAP\SOAPBody\Factory\SourceCredentialsFactory:
-        arguments:
-            - ''
-            - ''
-            - ''
-
     MiguelAlcaino\MindbodyApiClient\MindbodySOAP\BaseRequester\MindbodySOAPRequester:
         arguments:
             - '@guzzle_client'
