@@ -43,7 +43,7 @@ class BundleExtensionTest extends AbstractExtensionTestCase
 
         $this->assertContainerBuilderHasService(SourceCredentialsFactory::class);
         $this->assertContainerBuilderHasService(UserCredentialsFactory::class);
-        $this->assertContainerBuilderHasService('guzzle_client');
+        $this->assertContainerBuilderHasService('mindbody_client_bundle.guzzle_client');
         $this->assertContainerBuilderHasService(MindbodySOAPRequester::class);
         $this->assertContainerBuilderHasService(JmsSerializerFactory::class);
         $this->assertContainerBuilderHasService(MindbodyDeserializer::class);

@@ -6,12 +6,12 @@
 #    mindbody_api_client.site_ids:
 
 services:
-    guzzle_client:
+    mindbody_client_bundle.guzzle_client:
         class: GuzzleHttp\Client
 
     MiguelAlcaino\MindbodyApiClient\MindbodySOAP\BaseRequester\MindbodySOAPRequester:
         arguments:
-            - '@guzzle_client'
+            - '@mindbody_client_bundle.guzzle_client'
 
     MiguelAlcaino\MindbodyApiClient\MindbodySOAP\Serializer\Factory\JmsSerializerFactory: ~
 
