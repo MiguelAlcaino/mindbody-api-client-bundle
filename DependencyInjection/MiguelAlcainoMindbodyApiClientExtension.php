@@ -21,19 +21,24 @@ class MiguelAlcainoMindbodyApiClientExtension extends Extension
 
         $loader->load('services.yaml');
 
-        $sourceCredentialsFactory = new SourceCredentialsFactory(
-            $config['credentials']['source_name'],
-            $config['credentials']['source_password'],
-            $config['credentials']['sites_ids']
-        );
-        $container->set(SourceCredentialsFactory::class, $sourceCredentialsFactory);
+        $container
+            ->register(SourceCredentialsFactory::class, SourceCredentialsFactory::class)
+            ->setArguments(
+                [
+                    $config['credentials']['source_name'],
+                    $config['credentials']['source_password'],
+                    $config['credentials']['sites_ids'],
+                ]
+            );
 
-        $userCredentialsFactory = new UserCredentialsFactory(
-            $config['credentials']['admin_user_name'],
-            $config['credentials']['admin_user_password'],
-            $config['credentials']['sites_ids']
-        );
-        $container->set(UserCredentialsFactory::class, $userCredentialsFactory);
+        $container->register(UserCredentialsFactory::class, UserCredentialsFactory::class)
+            ->setArguments(
+                [
+                    $config['credentials']['admin_user_name'],
+                    $config['credentials']['admin_user_password'],
+                    $config['credentials']['sites_ids'],
+                ]
+            );
     }
 
 }
