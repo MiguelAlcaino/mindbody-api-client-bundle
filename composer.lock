@@ -621,16 +621,16 @@
         },
         {
             "name": "miguelalcaino/mindbody-api-client",
-            "version": "1.0.29",
+            "version": "1.0.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MiguelAlcaino/mindbody-api-client.git",
-                "reference": "684fbd4362bfeef23cc95758e36f69066c972ff7"
+                "reference": "b336927a2f4c3cc095a7037b37b3898f1cb11c83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MiguelAlcaino/mindbody-api-client/zipball/684fbd4362bfeef23cc95758e36f69066c972ff7",
-                "reference": "684fbd4362bfeef23cc95758e36f69066c972ff7",
+                "url": "https://api.github.com/repos/MiguelAlcaino/mindbody-api-client/zipball/b336927a2f4c3cc095a7037b37b3898f1cb11c83",
+                "reference": "b336927a2f4c3cc095a7037b37b3898f1cb11c83",
                 "shasum": ""
             },
             "require": {
@@ -668,9 +668,9 @@
             "description": "Php client for Mindbody",
             "support": {
                 "issues": "https://github.com/MiguelAlcaino/mindbody-api-client/issues",
-                "source": "https://github.com/MiguelAlcaino/mindbody-api-client/tree/1.0.29"
+                "source": "https://github.com/MiguelAlcaino/mindbody-api-client/tree/1.0.30"
             },
-            "time": "2020-11-08T02:38:50+00:00"
+            "time": "2020-11-09T23:50:51+00:00"
         },
         {
             "name": "phpoption/phpoption",
