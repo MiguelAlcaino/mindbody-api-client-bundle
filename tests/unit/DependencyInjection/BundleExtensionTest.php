@@ -3,6 +3,8 @@
 namespace MiguelAlcainoTest\MindbodyApiClientBundle\Tests\unit\DependencyInjection;
 
 use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractExtensionTestCase;
+use MiguelAlcaino\MindbodyApiClient\MindbodyREST\BaseRequester\MindbodyRESTRequester;
+use MiguelAlcaino\MindbodyApiClient\MindbodyREST\RESTEndpoint\Sale\SaleRESTRequester;
 use MiguelAlcaino\MindbodyApiClient\MindbodySOAP\BaseRequester\MindbodySOAPRequester;
 use MiguelAlcaino\MindbodyApiClient\MindbodySOAP\Serializer\Deserializer\MindbodyDeserializer;
 use MiguelAlcaino\MindbodyApiClient\MindbodySOAP\Serializer\Factory\JmsSerializerFactory;
@@ -38,6 +40,9 @@ class BundleExtensionTest extends AbstractExtensionTestCase
                     'admin_user_name'     => 'fake_aun',
                     'admin_user_password' => 'fake_aup',
                 ],
+                'rest' => [
+                    'api_key' => 'FAKE-API-KEY'
+                ]
             ]
         );
 
@@ -54,6 +59,8 @@ class BundleExtensionTest extends AbstractExtensionTestCase
         $this->assertContainerBuilderHasService(ClientServiceSOAPRequester::class);
         $this->assertContainerBuilderHasService(SaleServiceSOAPRequester::class);
         $this->assertContainerBuilderHasService(SiteServiceSOAPRequester::class);
+        $this->assertContainerBuilderHasService(MindbodyRESTRequester::class);
+        $this->assertContainerBuilderHasService(SaleRESTRequester::class);
     }
 
     public function testIncorrectConfig()

@@ -2,12 +2,14 @@
 
 namespace MiguelAlcaino\MindbodyApiClientBundle\DependencyInjection;
 
+use MiguelAlcaino\MindbodyApiClient\MindbodyREST\BaseRequester\MindbodyRESTRequester;
 use MiguelAlcaino\MindbodyApiClient\MindbodySOAP\SOAPBody\Factory\SourceCredentialsFactory;
 use MiguelAlcaino\MindbodyApiClient\MindbodySOAP\SOAPBody\Factory\UserCredentialsFactory;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
+use Symfony\Component\DependencyInjection\Reference;
 
 class MiguelAlcainoMindbodyApiClientExtension extends Extension
 {
@@ -37,6 +39,15 @@ class MiguelAlcainoMindbodyApiClientExtension extends Extension
                     $config['credentials']['admin_user_name'],
                     $config['credentials']['admin_user_password'],
                     $config['credentials']['sites_ids'],
+                ]
+            );
+
+        $container->register(MindbodyRESTRequester::class, MindbodyRESTRequester::class)
+            ->setArguments(
+                [
+                    $config['rest']['api_key'],
+                    $config['credentials']['sites_ids'][0],
+                    $container->get('mindbody_client_bundle.guzzle_client')
                 ]
             );
     }

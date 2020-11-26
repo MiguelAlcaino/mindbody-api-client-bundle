@@ -13,6 +13,11 @@ class Configuration implements ConfigurationInterface
 
         $treeBuilder->getRootNode()
             ->children()
+                ->arrayNode('rest')
+                    ->children()
+                        ->scalarNode('api_key')->isRequired()->cannotBeEmpty()->end()
+                    ->end()
+                ->end()
                 ->arrayNode('credentials')
                     ->children()
                         ->scalarNode('source_name')->isRequired()->cannotBeEmpty()->end()
