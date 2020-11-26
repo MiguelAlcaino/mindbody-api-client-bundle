@@ -47,7 +47,7 @@ class MiguelAlcainoMindbodyApiClientExtension extends Extension
                 [
                     $config['rest']['api_key'],
                     $config['credentials']['sites_ids'][0],
-                    $container->get('mindbody_client_bundle.guzzle_client')
+                    new Reference('mindbody_client_bundle.guzzle_client')
                 ]
             );
     }
