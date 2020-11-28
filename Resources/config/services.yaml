@@ -63,3 +63,8 @@ services:
         arguments:
             $mindbodyRESTRequester: '@MiguelAlcaino\MindbodyApiClient\MindbodyREST\BaseRequester\MindbodyRESTRequester'
             $serializer: '@JMS\Serializer\Serializer'
+
+    MiguelAlcaino\MindbodyApiClient\MindbodyREST\RESTEndpoint\UserToken\UserTokenRESTRequester:
+        arguments:
+            $mindbodyRESTRequester: '@MiguelAlcaino\MindbodyApiClient\MindbodyREST\BaseRequester\MindbodyRESTRequester'
+            $serializer: '@JMS\Serializer\Serializer'
