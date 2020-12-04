@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4d65b94efca022b60f0d5f462ffdbea6",
+    "content-hash": "67d2d7a358ebcc54a3ff776547d3765b",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -652,16 +652,16 @@
         },
         {
             "name": "miguelalcaino/mindbody-api-client",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MiguelAlcaino/mindbody-api-client.git",
-                "reference": "f5f13f397ff07d7dd6c8a7ce6835a837a63286f6"
+                "reference": "dfcda9adbc092f9ce471264c29c85307fdb70c12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MiguelAlcaino/mindbody-api-client/zipball/f5f13f397ff07d7dd6c8a7ce6835a837a63286f6",
-                "reference": "f5f13f397ff07d7dd6c8a7ce6835a837a63286f6",
+                "url": "https://api.github.com/repos/MiguelAlcaino/mindbody-api-client/zipball/dfcda9adbc092f9ce471264c29c85307fdb70c12",
+                "reference": "dfcda9adbc092f9ce471264c29c85307fdb70c12",
                 "shasum": ""
             },
             "require": {
@@ -699,9 +699,9 @@
             "description": "Php client for Mindbody",
             "support": {
                 "issues": "https://github.com/MiguelAlcaino/mindbody-api-client/issues",
-                "source": "https://github.com/MiguelAlcaino/mindbody-api-client/tree/1.1.1"
+                "source": "https://github.com/MiguelAlcaino/mindbody-api-client/tree/1.2.0"
             },
-            "time": "2020-11-26T22:06:53+00:00"
+            "time": "2020-12-04T23:02:05+00:00"
         },
         {
             "name": "phpoption/phpoption",
