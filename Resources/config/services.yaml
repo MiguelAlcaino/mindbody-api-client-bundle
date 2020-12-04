@@ -74,4 +74,4 @@ services:
 
     MiguelAlcaino\MindbodyApiClient\MindbodyREST\RESTEndpoint\UserToken\UserTokenRESTRequester:
         arguments:
-            $RESTRequester: '@MiguelAlcaino\MindbodyApiClient\MindbodyREST\BaseRequester\RESTRequesterExecutor'
+            $restRequester: '@MiguelAlcaino\MindbodyApiClient\MindbodyREST\BaseRequester\RESTRequesterExecutor'
